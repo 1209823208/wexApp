@@ -2,15 +2,17 @@
   "pages":[
     "pages/index/index",
     "pages/join/join",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/detail/detail"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#2e5e86",
+    "navigationBarTitleText": "Demo",
+    "navigationBarTextStyle":"white"
   },
   "tabBar": {
+   "selectedColor": "#2e5e86",
     "list": [{
       "pagePath": "pages/index/index",
       "text": "首页",
