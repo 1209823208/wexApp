@@ -1,0 +1,6 @@
+<!--components/classic/movie/index.wxml-->
+<view hidden='{{hidden}}' class='com-classic-movie'>
+  <image class='big-img' src='{{img}}'></image>
+  <image class='small-img' src='images/essay@tag.png'></image>
+  <text class='content'>{{content}}</text>
+</view>

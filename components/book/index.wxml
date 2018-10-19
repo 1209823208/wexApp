@@ -1,0 +1,7 @@
+<!--components/book/book-detail/index.wxml-->
+<view class="detail-image" bindtap='onLink'>
+  <image src='{{detailData.image}}'></image>
+  <text>{{detailData.title}}</text>
+  <text>{{detailData.author}}</text>
+  <text>{{detailData.fav_nums}}喜欢</text>
+</view>

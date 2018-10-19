@@ -1,6 +1,0 @@
-/* pages/join/join.wxss */
-.join-text text{
-  margin-bottom:20px;
-  text-indent:2rem;
-  display: block
-}

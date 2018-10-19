@@ -1,0 +1,7 @@
+/* components/button/index.wxss */
+
+.com-img button {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}

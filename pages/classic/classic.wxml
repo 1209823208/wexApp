@@ -1,0 +1,11 @@
+<view class='page-classic'>
+  <view class='classic-header'>
+    <v-essay index="{{classicData.index}}" />
+    <v-like bind:myevent="onLike" like="{{classicData.like_status}}" count="{{classicData.fav_nums}}" />
+  </view>
+  <v-movie hidden="{{classicData.type!=='movie'}}" img="{{classicData.image}}" content="{{classicData.content}}" />
+  <v-sentence hidden="{{classicData.type!=='sentence'}}" img="{{classicData.image}}" content="{{classicData.content}}" />
+  <v-music wx:if="{{classicData.type==='music'}}" img="{{classicData.image}}" content="{{classicData.content}}" src="{{classicData.url}}"/>
+
+  <v-nav bind:preornest="tap_pre_or_next" isLast="{{isLast}}" isFirst="{{isFirst}}" title="{{classicData.title}}" />
+</view>

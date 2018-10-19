@@ -1,0 +1,52 @@
+/* pages/book/book.wxss */
+.page-book-content{
+  min-height:100%;
+}
+.book-search-content {
+  position: fixed;
+  z-index: 1;
+  background: #fff;
+  color: #333;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+  padding-left: 20rpx;
+  display: flex;
+  flex-direction: row
+}
+.book-search-content>input{
+ border: 1px solid #bbb;
+ width: 80%;
+}
+.clear{
+  width: 20%;
+}
+.book-search-content>image {
+  width: 28rpx;
+  height: 28rpx;
+  position: absolute;
+  left: 40rpx;
+  top: 14rpx;
+}
+
+.book-quality,.search-content {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  position: relation;
+  padding-top: 50px;
+}
+
+.book-quality>image {
+  width: 107rpx;
+  height: 34rpx;
+}
+
+.book-quality .detail-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20rpx 70rpx;
+  justify-content: space-between;
+}

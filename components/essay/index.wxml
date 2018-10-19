@@ -1,0 +1,12 @@
+<!--components/classic/essay/index.wxml-->
+<view class='com-classic-essay'>
+  <view class='essay-inex'>
+    <text>No.</text>
+    <text class='index'>{{_index}}</text>
+    <text class='vertical-line'></text>
+  </view>
+  <view class='essay-date'>
+    <text class='month'>{{month}}</text>
+    <text class='year'>{{year}}</text>
+  </view>
+</view>

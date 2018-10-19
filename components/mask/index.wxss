@@ -1,0 +1,10 @@
+/* components/mask/index.wxss */
+.mask{
+  background: #333;
+  position: fixed;
+  bottom: 0;
+  top:0;
+  left:0;
+  right: 0;
+  opacity: 0.5;
+}

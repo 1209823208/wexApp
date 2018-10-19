@@ -1,0 +1,27 @@
+<!-- 搜素弹框 -->
+<view class='com-search'>
+  <view>
+    <view class="search-mask-content}}">
+      <input style='width:90%' bindconfirm='searchInput' auto-focus="true" />
+      <image src="/images/icon/search.png"></image>
+    </view>
+    <view>
+      <view class='history-search'>
+        <text>历史搜索</text>
+        <view class='history-content'>
+          <block wx:for="{{historyData}}" wx:key="">
+            <v-tag content="{{item}}" bind:tapping="searchInput" />
+          </block>
+        </view>
+      </view>
+      <view class='hot-search'>
+        <text>热搜索</text>
+        <view class='hot-content'>
+          <block wx:for="{{hotData}}" wx:key="">
+            <v-tag content="{{item}}" bind:tapping="searchInput" />
+          </block>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

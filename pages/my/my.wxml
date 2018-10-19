@@ -1,0 +1,40 @@
+<view class='page-my'>
+  <view class='header'>
+    <image class='background-img' src='../../images/my/my@bg.png'></image>
+    <view class='header-img'>
+      <v-button wx:if="{{!userInfo}}" open-type="getUserInfo" bind:getuserinfo="getuserinfo">
+        <image slot="img" src='../../images/my/my.png'></image>
+      </v-button>
+      <view wx:if="{{userInfo}}">
+        <image src='{{userInfo.avatarUrl}}'></image>
+        <text>{{userInfo.nickName}}</text>
+      </view>
+    </view>
+    <view class='header-bottom'>
+      <view class='about'>
+        <image src='../../images/my/about.png'></image>
+        <text>关于我们</text>
+      </view>
+      <view class='like-nums'>
+        <text>2</text>
+        <text>喜欢的书</text>
+      </view>
+    </view>
+  </view>
+  <view class='like-content'>
+    <text class='text'>喜欢</text>
+    <view class='all-like-content'>
+      <block wx:for="{{likeData}}" wx:key="{{id}}">
+        <view class='like-item'>
+          <view class='item-header'>
+            <v-tag content="音乐" />
+            <v-like like="{{true}}" count="46" />
+          </view>
+          <image class='like-img rdu' wx:if="{{item.type==='music'}}" src='{{item.image}}'></image>
+          <image class='like-img'  wx:else src='{{item.image}}'></image>
+          <text>{{item.content}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

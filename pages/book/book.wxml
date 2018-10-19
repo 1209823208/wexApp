@@ -1,0 +1,16 @@
+<view class='page-book-content'>
+  <view class='book-search-content'>
+    <input placeholder='输入关键词' bindtap='showSearch' value='{{keyword}}' />
+    <image src="/images/icon/search.png"></image>
+    <text class='clear' bindtap='clear'>X</text>
+  </view>
+  <view wx:if="{{!searing}}" class='book-quality'>
+    <image src='/images/book/quality.png'></image>
+    <view class='detail-list'>
+      <block wx:for="{{bookData}}" wx:key="id">
+        <v-book-detail detail-data="{{item}}" />
+      </block>
+    </view>
+  </view>
+  <v-search wx:if="{{searing}}" bind:searchEvent="searchEvent" />
+</view>

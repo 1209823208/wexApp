@@ -1,0 +1,7 @@
+/* components/tag/index.wxss */
+.con {
+  background-color: #bbb;
+  padding: 5rpx 0rpx 5rpx 10rpx;
+  margin-right: 10rpx;
+  margin-bottom: 20rpx;
+}

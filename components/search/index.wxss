@@ -1,0 +1,56 @@
+.com-search {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 2;
+  overflow: scroll;
+}
+
+.search-mask-content {
+  color: #333;
+  text-align: center;
+  width: 100%;
+  border: 1px solid #bbb;
+  margin: auto;
+  box-sizing: border-box;
+  padding-left: 20rpx;
+ 
+  background: #fff;
+}
+.search-mask-content.active{
+   position: fixed;
+}
+
+.search-mask-content>image {
+  width: 28rpx;
+  height: 28rpx;
+  position: absolute;
+  left: 10rpx;
+  top: 14rpx;
+}
+.search-mask-content>.clear {
+  position: absolute;
+  right: 10rpx;
+  top: 0px;
+}
+.history-search .history-content, .hot-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.search-detail-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20rpx 70rpx;
+  justify-content: space-around;
+  margin-top:50rpx;
+
+}
+v-book-detail{
+  margin-top: 20rpx;
+}

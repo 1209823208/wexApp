@@ -1,0 +1,5 @@
+<view class='com-img'>
+  <button open-type="{{openType}}" bindgetuserinfo="bindGetUserInfo" plain='{{true}}'>
+   <slot name='img'></slot>
+  </button>
+</view>

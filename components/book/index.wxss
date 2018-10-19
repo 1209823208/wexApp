@@ -1,0 +1,9 @@
+/* components/book/book-detail/index.wxss */
+.detail-image{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.detail-image image{
+  width: 100%;
+}

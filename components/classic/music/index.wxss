@@ -1,0 +1,18 @@
+/* components/classic/music/index.wxss */
+@import "../classic-common.wxss";
+.com-classic-movie .big-img.music-big-img{
+  width: 422rpx;
+  height: 422rpx;
+  margin-top: 60rpx;
+  /* margin-bottom: 120rpx; */
+  border-radius: 70%;
+  /* margin-bottom: -50px; */
+  overflow: hidden;
+}
+
+.player-img {
+  width: 120rpx;
+  height: 120rpx;
+   position: relative; 
+   bottom: 271rpx; 
+}

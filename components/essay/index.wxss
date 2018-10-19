@@ -1,0 +1,41 @@
+/* components/classic/essay/index.wxss */
+
+.com-classic-essay {
+  display: flex;
+  flex-direction: row;
+}
+
+.com-classic-essay .essay-inex {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.com-classic-essay .essay-inex .index {
+  font-size: 30px;
+  font-weight: 800;
+  margin-right: 7px;
+}
+.com-classic-essay .essay-inex .vertical-line{
+  margin-right:7px;
+  height:22px;
+  border-left:1px solid black;
+}
+.com-classic-essay .essay-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+.com-classic-essay .essay-date .month{
+  font-size:12px;
+  line-height:12px; 
+  padding-bottom: 2px; 
+  margin-right:2rpx;
+  /* padding-right:4rpx; */
+}
+
+.com-classic-essay .essay-date .year{
+  font-size:10px;
+  line-height:10px; 
+  padding-bottom:3px;   
+}
